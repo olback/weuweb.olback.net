@@ -110,6 +110,13 @@
     					    	        <i class="fa fa-youtube-play"></i> Christer on YouTube
                                     </a>
                                 </li>
+                                
+                                <!-- Contribute -->
+                                <li>
+                                    <a href="https://github.com/olback/weuweb.olback.net" target="_blank">
+    					    	        <i class="fa fa-github"></i> Contribute
+                                    </a>
+                                </li>
 
                                 <!-- Web Dev -->
                                 <li>
