@@ -1,0 +1,15 @@
+/*
+ *  weuweb.olback.net
+ *  CSS for the 404 page.
+ */
+
+* {
+    text-align: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #333;
+    text-decoration: none;
+}
+
+.link {
+    color: #000;
+}
