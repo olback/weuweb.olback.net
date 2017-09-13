@@ -6,7 +6,7 @@
         <div class="title-block">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="title-description"> View your profile information. </p>
+                    <p class="title-description"> View/update your profile information. </p>
                 </div>
             </div>
         </div>
@@ -41,10 +41,10 @@
                             <label class="control-label">Email</label>
                             <input class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['email'];?>">
                         </div>
-                        <div class="form-group">
+                        <!--<div class="form-group">
                             <label class="control-label">Admin</label>
-                            <p class="form-control-static boxed"><?php if($_SESSION['admin'] == "1"){echo "Yes";} else {echo "No";}?></p>
-                        </div>
+                            <p class="form-control-static boxed"><?php //if($_SESSION['admin'] == "1"){echo "Yes";} else {echo "No";}?></p>
+                        </div>-->
                         <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Submit</button>
                     </form>
                 </div>
