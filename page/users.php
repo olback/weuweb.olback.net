@@ -5,8 +5,8 @@
         <div class="title-block">
             <div class="row">
                 <div class="col-md-6">
-                    <h3 class="title"> Admin </h3>
-                    <p class="title-description"> Files uploaded by users, waiting for validation. </p>
+                    <h3 class="title"> Users </h3>
+                    <p class="title-description"> List of all registerd users. </p>
                 </div>
             </div>
         </div>
@@ -22,7 +22,6 @@
         </div>
     </div>
     <div class="col-md-6">
-        <p>Lorem ipsum...</p>
-        <a href="actions.php?v=0">Admin</a>
+        <p>Pull users from db and list them here.</p>
     </div>
 </article>
