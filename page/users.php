@@ -7,5 +7,6 @@
     </div>
     <div class="col-md-6">
         <p>Lorem ipsum...</p>
+        <a href="actions.php?a=admin?v=0">Admin</a>
     </div>
 </article>
