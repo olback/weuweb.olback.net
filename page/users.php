@@ -5,8 +5,8 @@
         <div class="title-block">
             <div class="row">
                 <div class="col-md-6">
-                    <h3 class="title"> Users </h3>
-                    <p class="title-description"> List of users </p>
+                    <h3 class="title"> Admin </h3>
+                    <p class="title-description"> Files uploaded by users, waiting for validation. </p>
                 </div>
             </div>
         </div>
