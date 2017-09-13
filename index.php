@@ -26,7 +26,7 @@ switch($_SESSION['page']) {
                 
                 require 'page/admin.php';
                 
-                if($_SESSION['view'] == 0) {
+                if($_SESSION['view'] == "0") {
                     require 'page/admin.php';
                 } else {
                     require 'page/users.php';
