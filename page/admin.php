@@ -2,17 +2,11 @@
 <?php require "login/dbconf.php"; ?>
 
 <article class="content items-list-page">
-    <h1>Admin dashboard</h1>
-    <div class="title-search-block">
-        <div class="title-block">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="title-description"> Admin dashboard. Overview of users/files in the database. </p>
-                </div>
-            </div>
-        </div>
+    <div class="title-block">
+        <h2 class="title"> Admin dashboard </h2>
+        <p class="title-description"> Admin dashboard. Overview of users/files in the database.  </p>
     </div>
-    
+
     <div class="card items">
         <ul class="item-list striped">
             <li class="item item-list-header hidden-sm-down">

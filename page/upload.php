@@ -44,10 +44,11 @@
     $msg = '<br><p style="color:#a00; font-size: 18px;">Please select a file</p>';
   }
 ?>
+
 <article class="content">
-    <h1>Upload file</h1>
-    <div class="title-search-block">
-        <div class="title-block"></div>
+    <div class="title-block">
+        <h2 class="title"> Upload file </h2>
+        <p class="title-description"> Upload a file for anyone to see. </p>
     </div>
     <div class="col-md-6">
         <p>You can upload any file as long as it's not bigger than 8MB. If you want to get credited, please make sure to write your username and your real name in a comment at the top of the file(s). You can upload multiple files by adding them to an archive. (zip, rar, 7z)</p>

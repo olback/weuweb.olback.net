@@ -1,15 +1,9 @@
 <?php require "login/loginheader.php"; ?>
 
 <article class="content">
-<h1>Profile</h1>
-    <div class="title-search-block">
-        <div class="title-block">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="title-description"> View/update your profile information. </p>
-                </div>
-            </div>
-        </div>
+    <div class="title-block">
+        <h2 class="title"> Profile </h2>
+        <p class="title-description"> View/update your profile information. </p>
     </div>
     <!--<div class="col-md-6">
         <strong>Username:</strong> <?php echo $_SESSION['username'];?><br>
