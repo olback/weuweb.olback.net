@@ -1,5 +1,6 @@
 <?php
     require "login/loginheader.php";
+    $view = "main";
     require "page/head.php";
     require "page/nav.php";
 ?>
