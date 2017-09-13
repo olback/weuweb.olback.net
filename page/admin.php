@@ -7,7 +7,7 @@
         <div class="title-block">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="title-description"> Files uploaded by users, waiting for validation. </p>
+                    <p class="title-description"> Admin dashboard. Overview of users/files in the database. </p>
                 </div>
             </div>
         </div>
