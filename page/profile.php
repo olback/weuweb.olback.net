@@ -23,7 +23,7 @@
     <section class="section">
         <div class="row sameheight-container">
             <div class="col-md-6">
-                <div class="card card-block sameheight-item" style="height: 716px;">
+                <div class="card card-block">
                     <form>
                         <div class="form-group">
                             <label class="control-label">Username</label>
@@ -45,13 +45,14 @@
                             <label class="control-label">Admin</label>
                             <p class="form-control-static boxed"><?php if($_SESSION['admin'] == "1"){echo "Yes";} else {echo "No";}?></p>
                         </div>
+                        <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Submit</button>
                     </form>
                 </div>
             </div> <!-- .../col-md-6 -->
 
             <!-- Not implemented yet -->
             <div class="col-md-6">
-                <div class="card card-block sameheight-item" style="height: 716px;">
+                <div class="card card-block">
                     <form>
                         <div class="form-group">
                             <label class="control-label">New password</label>
@@ -61,6 +62,7 @@
                             <label class="control-label">Repeat password</label>
                             <input class="form-control boxed" type="password" disabled="disabled">
                         </div>
+                        <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Submit</button>
                     </form>
                 </div>
             </div> <!-- .../col-md-6 -->
