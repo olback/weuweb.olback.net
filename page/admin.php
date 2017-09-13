@@ -2,9 +2,23 @@
 <?php require "login/dbconf.php"; ?>
 
 <article class="content items-list-page">
-    <div class="title-block">
-        <h2 class="title"> Admin dashboard </h2>
-        <p class="title-description"> Admin dashboard. Overview of users/files in the database.  </p>
+    <div class="title-search-block">
+        <div class="title-block">
+            <div class="row">
+                <div class="col-md-6">
+                <h2 class="title"> Admin dashboard </h2>
+                    <p class="title-description"> Admin dashboard. Overview of users/files in the database.  </p>
+                </div>
+            </div>
+        </div>
+        <div class="items-search">
+            <div class="input-group">    
+                <span class="input-group-btn">    
+                    <button disabled="disabled" type="button" class="btn btn-primary" style="margin-right: 7px;">Admin panel</button>
+                    <button type="button" class="btn btn-primary" onclick="location.href=actions.php?v=1">Users</button>
+                </span>
+            </div>
+        </div>
     </div>
 
     <div class="card items">
