@@ -47,7 +47,23 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> <!-- .../col-md-6 -->
+
+            <!-- Not implemented yet -->
+            <div class="col-md-6">
+                <div class="card card-block sameheight-item" style="height: 716px;">
+                    <form>
+                        <div class="form-group">
+                            <label class="control-label">New password</label>
+                            <input class="form-control boxed" type="password" disabled="disabled">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Repeat password</label>
+                            <input class="form-control boxed" type="password" disabled="disabled">
+                        </div>
+                    </form>
+                </div>
+            </div> <!-- .../col-md-6 -->
         </div>
     </section>
 </article>
