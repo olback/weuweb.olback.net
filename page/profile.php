@@ -16,7 +16,9 @@
     <strong>Name:</strong> <?php echo $_SESSION['name'];?><br>
     <strong>Class:</strong> <?php echo $_SESSION['class'];?><br>
     <strong>Email:</strong> <?php echo $_SESSION['email'];?><br>
-    <strong>Admin:</strong> <?php if($_SESSION['admin'] == "1"){echo "Yes"} else {echo "No"}?>
+    <strong>Admin:</strong>
+    <?php
+        if($_SESSION['admin'] == "1"){echo "Yes";} else {echo "No";}?>
     <br><br>
     <p>Later on when I've got time, there will be more features here. You'll be able to change your email and password.</p>
 </article>
