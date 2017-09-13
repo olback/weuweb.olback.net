@@ -11,14 +11,43 @@
             </div>
         </div>
     </div>
-
-    <strong>Username:</strong> <?php echo $_SESSION['username'];?><br>
-    <strong>Name:</strong> <?php echo $_SESSION['name'];?><br>
-    <strong>Class:</strong> <?php echo $_SESSION['class'];?><br>
-    <strong>Email:</strong> <?php echo $_SESSION['email'];?><br>
-    <strong>Admin:</strong>
-    <?php
-        if($_SESSION['admin'] == "1"){echo "Yes";} else {echo "No";}?>
-    <br><br>
-    <p>Later on when I've got time, there will be more features here. You'll be able to change your email and password.</p>
+    <!--<div class="col-md-6">
+        <strong>Username:</strong> <?php echo $_SESSION['username'];?><br>
+        <strong>Name:</strong> <?php echo $_SESSION['name'];?><br>
+        <strong>Class:</strong> <?php echo $_SESSION['class'];?><br>
+        <strong>Email:</strong> <?php echo $_SESSION['email'];?><br>
+        <strong>Admin:</strong> <?php if($_SESSION['admin'] == "1"){echo "Yes";} else {echo "No";}?>
+        <br><br>
+        <p>Later on when I've got time, there will be more features here. You'll be able to change your email and password.</p>
+    </div>-->
+    <section class="section">
+        <div class="row sameheight-container">
+            <div class="col-md-6">
+                <div class="card card-block sameheight-item" style="height: 716px;">
+                    <form>
+                        <div class="form-group">
+                            <label class="control-label">Username</label>
+                            <input class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['username'];?>">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Name</label>
+                            <input class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['name'];?>">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Class</label>
+                            <input class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['class'];?>">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Email</label>
+                            <input class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['email'];?>">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Admin</label>
+                            <p class="form-control-static boxed"><?php if($_SESSION['admin'] == "1"){echo "Yes";} else {echo "No";}?></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </article>
