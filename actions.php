@@ -3,6 +3,14 @@
 
 // Page switcher
 session_start();
+
+if (isset($_GET['a']) && isset($_GET['v'])) {
+    $_SESSION['page'] = $_GET['a'];
+    $_SESSION['view'] = $_GET['v'];
+    Header('Location: ./');
+    die();
+}
+
 if (isset($_GET['a'])) {
     $_SESSION['page'] = $_GET['a'];
     Header('Location: ./');

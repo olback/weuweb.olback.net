@@ -1,6 +1,5 @@
 <?php
     require "login/loginheader.php";
-    $view = "main";
     require "page/head.php";
     require "page/nav.php";
 ?>
@@ -23,7 +22,15 @@ switch($_SESSION['page']) {
 
         case "admin":
             if($_SESSION['admin'] == "1"){
-                require 'page/admin.php';
+                
+                //require 'page/admin.php';
+                
+                if($_SESSION['view'] == 0) {
+                    require 'page/admin.php';
+                } else {
+                    require 'page/users.php';
+                }
+
             } else {
                 require 'page/main.php';
             }
