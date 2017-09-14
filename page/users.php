@@ -37,10 +37,10 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <!--<td>Mark</td>
+                                    <!--<tr>
+                                        <td>Mark</td>
                                         <td>Otto</td>
-                                        <td>@mdo</td>-->
+                                        <td>@mdo</td></tr>-->
                                     <?php
                                         // Create connection
                                         $conn = new mysqli($host, $username, $password, $db_name);
@@ -56,16 +56,16 @@
                                             // output data of each row
                                             echo '<style>.red:hover{color:red!important;}</style>';
                                             while($row = $result->fetch_assoc()) {
-                                                echo '
+                                                echo '<tr>
                                                     <td>'.$row['name'].'</td>
                                                     <td>'.$row['username'].'</td>
                                                     <td>'.$row['class'].'</td>
+                                                    </tr>
                                                 ';
                                             }
                                         }
                                         $conn->close();
                                     ?>
-                                    </tr>
                                 </tbody>
                             </table>
                         </section>
