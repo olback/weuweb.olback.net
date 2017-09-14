@@ -37,11 +37,10 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <!--<tr>
-                                        <td>Mark</td>
+                                    <tr>
+                                        <!--<td>Mark</td>
                                         <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>-->
+                                        <td>@mdo</td>-->
                                     <?php
                                         // Create connection
                                         $conn = new mysqli($host, $username, $password, $db_name);
@@ -66,6 +65,7 @@
                                         }
                                         $conn->close();
                                     ?>
+                                    </tr>
                                 </tbody>
                             </table>
                         </section>
