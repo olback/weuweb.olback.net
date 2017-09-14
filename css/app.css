@@ -2841,5 +2841,5 @@ span a {
       margin-top: 8px; } }
 
 .nb {
-  border-top: none;
+  border-top: none !important;
 }
