@@ -37,11 +37,35 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <!--<tr>
                                         <td>Mark</td>
                                         <td>Otto</td>
                                         <td>@mdo</td>
-                                    </tr>
+                                    </tr>-->
+                                    <?php
+                                        // Create connection
+                                        $conn = new mysqli($host, $username, $password, $db_name);
+                                        // Check connection
+                                        if ($conn->connect_error) {
+                                            die("Connection failed: " . $conn->connect_error);
+                                        } 
+
+                                        $sql = "SELECT username, name, class FROM members";
+                                        $result = $conn->query($sql);
+
+                                        if ($result->num_rows > 0) {
+                                            // output data of each row
+                                            echo '<style>.red:hover{color:red!important;}</style>';
+                                            while($row = $result->fetch_assoc()) {
+                                                echo '
+                                                    <td>'.$row['name'].'</td>
+                                                    <td>'.$row['username'].'</td>
+                                                    <td>'.$row['class'].'</td>
+                                                ';
+                                            }
+                                        }
+                                        $conn->close();
+                                    ?>
                                 </tbody>
                             </table>
                         </section>
