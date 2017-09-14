@@ -1,4 +1,5 @@
 <?php require "login/loginheader.php"; ?>
+<?php require "login/dbconf.php"; ?>
 
 <article class="content items-list-page">
     <div class="title-search-block">
@@ -21,7 +22,34 @@
             </form>
         </div>
     </div>
-    <div class="col-md-6">
-        <p>Pull users from db and list them here.</p>
-    </div>
+    <section class="section">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-block">                    
+                        <section>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Username</th>
+                                        <th>Class</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </article>
