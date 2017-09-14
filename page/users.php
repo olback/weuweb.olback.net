@@ -31,15 +31,13 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>#</th>
-                                        <th>Name</th>
-                                        <th>Username</th>
-                                        <th>Class</th>
+                                        <th class="nb">Name</th>
+                                        <th class="nb">Username</th>
+                                        <th class="nb">Class</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">1</th>
                                         <td>Mark</td>
                                         <td>Otto</td>
                                         <td>@mdo</td>
