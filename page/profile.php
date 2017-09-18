@@ -13,8 +13,8 @@ if(isset($_POST['updateProfile'])) {
     } 
 
     // prepare and bind
-    $stmt = $conn->prepare("UPDATE members SET username = ?, email = ?, name = ?, class = ?");
-    $stmt->bind_param("ssss", $_POST['username'], $_POST['email'], $_POST['name'], $_POST['class']);
+    $stmt = $conn->prepare("UPDATE members SET username = ?, email = ?, name = ?, class = ? WHERE id = ?");
+    $stmt->bind_param("sssss", $_POST['username'], $_POST['email'], $_POST['name'], $_POST['class'], $_SESSION['id']);
     $stmt->execute();
 
     if ($stmt->errno) {
