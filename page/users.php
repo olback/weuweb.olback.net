@@ -48,7 +48,7 @@
                                         if ($conn->connect_error) {
                                             die("Connection failed: " . $conn->connect_error);
                                         } 
-                                        mysqli_set_charset('utf8', $conn);
+                                        mysqli_set_charset($conn, 'utf8');
                                         $sql = "SELECT username, name, class FROM members";
                                         $result = $conn->query($sql);
 
