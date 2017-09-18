@@ -20,31 +20,32 @@
                 <div class="card card-block">
                     <form>
                         <div class="form-group">
-                            <!--<label class="control-label">Username</label>
-                            <input id="usernameInput" class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['username'];?>">-->
                             <label class="control-label">Username</label>
                             <div class="input-group">
-                                <input class="form-control" placeholder="Username" type="text" value="<?php echo $_SESSION['username'];?>">
+                                <input disabled="disabled" class="form-control" placeholder="Username" type="text" value="<?php echo $_SESSION['username'];?>">
                                 <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label">Name</label>
                             <div class="input-group">
-                                <input class="form-control" placeholder="Name" type="text" value="<?php echo $_SESSION['name'];?>">
+                                <input disabled="disabled" class="form-control" placeholder="Name" type="text" value="<?php echo $_SESSION['name'];?>">
                                 <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label">Class</label>
                             <div class="input-group">
-                                <input class="form-control" placeholder="Class" type="text" value="<?php echo $_SESSION['class'];?>">
+                                <input disabled="disabled" class="form-control" placeholder="Class" type="text" value="<?php echo $_SESSION['class'];?>">
                                 <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label">Email</label>
-                            <input id="emailInput" class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['email'];?>">
+                            <div class="input-group">
+                                <input disabled="disabled" class="form-control" placeholder="Email" type="text" value="<?php echo $_SESSION['email'];?>">
+                                <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                            </div>
                         </div>
                         <button type="button" id="updateProfile" class="btn btn-primary btn-lg" disabled="disabled">Submit</button>
                     </form>
