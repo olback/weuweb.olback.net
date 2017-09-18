@@ -3,7 +3,7 @@
 <?php
 
 if(isset($_POST['updateProfile'])) {
-    echo '<script>alert("yeeeeeeet");</script>'
+    echo '<script>alert("yeeeeeeet");</script>';
 }
 
 
