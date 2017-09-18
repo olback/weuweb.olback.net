@@ -1,0 +1,31 @@
+/*
+ *  Additional CSS for weuweb.olback.net
+ */
+
+.nb {
+    border-top: none !important;
+}
+  
+.input-group-addon.click{
+    cursor: pointer;
+}
+
+input[readonly="readonly"]:focus {
+    border-color: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+input:focus.form-control {
+    border-color: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.input-group span.input-group-addon {
+    transition: none !important;
+}
+
+.input-group>.form-control {
+    border-radius: 0px !important;
+}
+
+.input-group>.form-control input:focus {
+    border-radius: 0px !important;
+}
