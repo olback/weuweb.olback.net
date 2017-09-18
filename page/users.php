@@ -1,5 +1,6 @@
 <?php require "login/loginheader.php"; ?>
 <?php require "login/dbconf.php"; ?>
+<?php mb_internal_encoding("UTF-8"); ?>
 
 <article class="content items-list-page">
     <div class="title-search-block">
