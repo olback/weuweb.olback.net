@@ -1,13 +1,12 @@
 <?php require "login/loginheader.php"; ?>
 <?php require "login/dbconf.php"; ?>
-<?php mb_internal_encoding("UTF-8"); ?>
 
 <article class="content items-list-page">
     <div class="title-search-block">
         <div class="title-block">
             <div class="row">
                 <div class="col-md-6">
-                    <h3 class="title"> Users </h3>
+                    <h3 class="title"> Users (<?php echo mb_internal_encoding(); ?>)</h3>
                     <p class="title-description"> List of all registerd users. </p>
                 </div>
             </div>
@@ -49,7 +48,7 @@
                                         if ($conn->connect_error) {
                                             die("Connection failed: " . $conn->connect_error);
                                         } 
-
+                                        mysqli_set_charset('utf8', $conn);
                                         $sql = "SELECT username, name, class FROM members";
                                         $result = $conn->query($sql);
 
