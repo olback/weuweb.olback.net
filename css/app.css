@@ -2839,11 +2839,3 @@ span a {
   @media (max-width: 767px) {
     .header .header-block-nav .profile-dropdown-menu {
       margin-top: 8px; } }
-
-.nb {
-  border-top: none !important;
-}
-
-.input-group-addon.click{
-  cursor: pointer;
-}
