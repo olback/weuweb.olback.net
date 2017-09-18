@@ -24,7 +24,7 @@ if(isset($_POST['updateProfile'])) {
     }
 
     // Update session variables
-    $sql = "SELECT username, name, class, email FROM members WHERE id = ".$_SESSION['id'];
+    $sql = "SELECT username, name, class, email FROM members WHERE id = \"".$_SESSION['id']."\"";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
