@@ -58,10 +58,11 @@
                                             // output data of each row
                                             echo '<style>.red:hover{color:red!important;}</style>';
                                             while($row = $result->fetch_assoc()) {
-                                                echo '<tr>
-                                                    <td>'.$row['name'].'</td>
-                                                    <td>'.$row['username'].'</td>
-                                                    <td>'.$row['class'].'</td>
+                                                echo '
+                                                    <tr>
+                                                        <td>'.$row['name'].'</td>
+                                                        <td>'.$row['username'].'</td>
+                                                        <td>'.$row['class'].'</td>
                                                     </tr>
                                                 ';
                                             }
