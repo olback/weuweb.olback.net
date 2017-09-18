@@ -18,12 +18,13 @@ if(isset($_POST['updateProfile'])) {
     $stmt->execute();
 
     if ($stmt->errno) {
-        $returnMsg = '<p style="color: #a00;">Update failed. Please report this error to <a href="https://olback.net#contact">olback.net#contact</a>.</p>';
+        $returnMsg1 = '<p style="color: #a00;">Update failed. Please report this error to <a href="https://olback.net#contact">olback.net#contact</a>.</p>';
     } else {
-        $returnMsg = '<p style="color: #0a0;">Updated successfully, please login again to see the changes.</p>';
+        $returnMsg1 = '<p style="color: #0a0;">Updated successfully, please login again to see the changes.</p>';
     }
 
     $stmt->close();
+    $conn->close();
 }
 
 ?>
