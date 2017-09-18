@@ -72,9 +72,9 @@ if(isset($_POST['updateProfile'])) {
                             <label class="control-label">Class</label>
                             <div class="input-group">
                                 <select id="class" name="class" readonly="readonly" class="form-control">
-                                    <option value="Te2A" <?php if($_SESSION['class'] == "Te2A"){echo "selected"}?>>Te2A</option>
-                                    <option value="Te2B" <?php if($_SESSION['class'] == "Te2B"){echo "selected"}?>>Te2B</option>
-                                    <option value="Te2C"> <?php if($_SESSION['class'] == "Te2C"){echo "selected"}?></option>
+                                    <option value="Te2A" <?php if($_SESSION['class'] == "Te2A"){echo "selected";} ?>>Te2A</option>
+                                    <option value="Te2B" <?php if($_SESSION['class'] == "Te2B"){echo "selected";} ?>>Te2B</option>
+                                    <option value="Te2C" <?php if($_SESSION['class'] == "Te2C"){echo "selected";} ?>>Te2C</option>
                                 </select>
                                 <span class="input-group-addon click" onclick="enableInput('class')"><i class="fa fa-pencil" aria-hidden="true"></i></span>
                             </div>
