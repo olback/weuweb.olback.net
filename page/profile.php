@@ -20,7 +20,21 @@ if(isset($_POST['updateProfile'])) {
     if ($stmt->errno) {
         $returnMsg1 = '<p style="color: #a00;">Update failed. Please report this error to <a href="https://olback.net#contact">olback.net#contact</a>.</p>';
     } else {
-        $returnMsg1 = '<p style="color: #0a0;">Updated successfully, please login again to see the changes.</p>';
+        $returnMsg1 = '<p style="color: #0a0;">Updated successfully.</p>';
+    }
+
+    // Update session variables
+    $sql = "SELECT username, name, class, email FROM members WHERE id = ".$_SESSION['id'];
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+            $_SESSION['username'] = $row['username'];
+            $_SESSION['name'] = $row['name'];
+            $_SESSION['class'] = $row['class'];
+            $_SESSION['email'] = $row['email'];
+        }
     }
 
     $stmt->close();
