@@ -93,7 +93,7 @@ if(isset($_POST['updateProfile'])) {
             </div> <!-- .../col-md-6 -->
 
             <!-- Not implemented yet -->
-            <div class="col-md-6">
+            <!--<div class="col-md-6">
                 <div class="card card-block">
                     <form method="POST">
                     <div class="form-group">
@@ -112,7 +112,7 @@ if(isset($_POST['updateProfile'])) {
                     </form>
                     <?php if(isset($returnMsg2)){echo $returnMsg2;} ?>
                 </div>
-            </div> <!-- .../col-md-6 -->
+            </div>--> <!-- .../col-md-6 -->
         </div>
     </section>
 </article>
