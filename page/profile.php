@@ -23,8 +23,8 @@
                             <!--<label class="control-label">Username</label>
                             <input id="usernameInput" class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['username'];?>">-->
                             <div class="input-group input-group-lg">
-                                <span class="input-group-addon">@</span>
                                 <input class="form-control" placeholder="Username" type="text" value="<?php echo $_SESSION['username'];?>">
+                                <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
                             </div>
                         </div>
                         <div class="form-group">
