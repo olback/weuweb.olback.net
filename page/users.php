@@ -6,7 +6,7 @@
         <div class="title-block">
             <div class="row">
                 <div class="col-md-6">
-                    <h3 class="title"> Users (<?php echo mb_internal_encoding(); ?>)</h3>
+                    <h3 class="title"> Users </h3>
                     <p class="title-description"> List of all registerd users. </p>
                 </div>
             </div>
@@ -48,8 +48,10 @@
                                         if ($conn->connect_error) {
                                             die("Connection failed: " . $conn->connect_error);
                                         } 
+
                                         mysqli_set_charset($conn, 'utf8');
-                                        $sql = "SELECT username, name, class FROM members";
+                                        // Select id for future implementations. Use id as uniqe identifyer as i want user to be able to change it.
+                                        $sql = "SELECT id, username, name, class FROM members";
                                         $result = $conn->query($sql);
 
                                         if ($result->num_rows > 0) {
