@@ -30,7 +30,7 @@ if(isset($_POST['updateProfile'])) {
     if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
-            $_SESSION['username'] = "shit";
+            $_SESSION['username'] = $row['username'];
             $_SESSION['name'] = $row['name'];
             $_SESSION['class'] = $row['class'];
             $_SESSION['email'] = $row['email'];
