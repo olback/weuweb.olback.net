@@ -20,26 +20,26 @@
                 <div class="card card-block">
                     <form>
                         <div class="form-group">
-                            <label class="control-label">Username</label>
-                            <input class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['username'];?>">
+                            <!--<label class="control-label">Username</label>
+                            <input id="usernameInput" class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['username'];?>">-->
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon">@</span>
+                                <input class="form-control" placeholder="Username" type="text" value="<?php echo $_SESSION['username'];?>">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label">Name</label>
-                            <input class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['name'];?>">
+                            <input id="nameInput" class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['name'];?>">
                         </div>
                         <div class="form-group">
                             <label class="control-label">Class</label>
-                            <input class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['class'];?>">
+                            <input id="classInput" class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['class'];?>">
                         </div>
                         <div class="form-group">
                             <label class="control-label">Email</label>
-                            <input class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['email'];?>">
+                            <input id="emailInput" class="form-control boxed" type="text" readonly="readonly" value="<?php echo $_SESSION['email'];?>">
                         </div>
-                        <!--<div class="form-group">
-                            <label class="control-label">Admin</label>
-                            <p class="form-control-static boxed"><?php //if($_SESSION['admin'] == "1"){echo "Yes";} else {echo "No";}?></p>
-                        </div>-->
-                        <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Submit</button>
+                        <button type="button" id="updateProfile" class="btn btn-primary btn-lg" disabled="disabled">Submit</button>
                     </form>
                 </div>
             </div> <!-- .../col-md-6 -->
@@ -56,10 +56,11 @@
                             <label class="control-label">Repeat password</label>
                             <input class="form-control boxed" type="password" disabled="disabled">
                         </div>
-                        <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Submit</button>
+                        <button type="button" id="updatePassword" class="btn btn-primary btn-lg" disabled="disabled">Submit</button>
                     </form>
                 </div>
             </div> <!-- .../col-md-6 -->
         </div>
     </section>
 </article>
+<script src="/js/profile.js"></script>
