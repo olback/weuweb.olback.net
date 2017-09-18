@@ -51,6 +51,7 @@ class LoginForm extends DbConn
                     session_start();
 
                     // Ser session vars
+                    $_SESSION['id'] = $result['id'];
                     $_SESSION['username'] = $myusername;
                     $_SESSION['name'] = $result['name'];
                     $_SESSION['class'] = $result['class'];

@@ -1,11 +1,30 @@
 <?php require "login/loginheader.php"; ?>
+<?php require "login/dbconf.php"; ?>
 
 <?php
 
 if(isset($_POST['updateProfile'])) {
-    echo '<script>alert("yeeeeeeet");</script>';
-}
 
+    // Create connection
+    $conn = new mysqli($host, $username, $password, $db_name);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    } 
+
+    // prepare and bind
+    $stmt = $conn->prepare("UPDATE members SET username = ?, email = ?, name = ?, class = ?");
+    $stmt->bind_param("ssss", $_POST['username'], $_POST['email'], $_POST['name'], $_POST['class']);
+    $stmt->execute();
+
+    if ($stmt->errno) {
+        $returnMsg = '<p style="color: #a00;">Update failed. Please report this error to <a href="https://olback.net#contact">olback.net#contact</a>.</p>';
+    } else {
+        $returnMsg = '<p style="color: #0a0;">Updated successfully, please login again to see the changes.</p>';
+    }
+
+    $stmt->close();
+}
 
 ?>
 
@@ -47,8 +66,9 @@ if(isset($_POST['updateProfile'])) {
                                 <span class="input-group-addon click" onclick="enableInput('email')"><i class="fa fa-pencil" aria-hidden="true"></i></span>
                             </div>
                         </div>
-                        <button type="button" id="updateProfile" name="updateProfile" class="btn btn-primary btn-lg" disabled="disabled">Submit</button>
+                        <button type="submit" id="updateProfile" name="updateProfile" class="btn btn-primary btn-lg" disabled="disabled">Submit</button>
                     </form>
+                    <?php if(isset($returnMsg1)){echo $returnMsg1;} ?>
                 </div>
             </div> <!-- .../col-md-6 -->
 
@@ -68,8 +88,9 @@ if(isset($_POST['updateProfile'])) {
                             <label class="control-label">Repeat password</label>
                             <input class="form-control boxed" type="password" name="nPassword2">
                         </div>
-                        <button type="button" id="updatePassword" name="updatePassword" class="btn btn-primary btn-lg" disabled="disabled">Submit</button>
+                        <button type="submit" id="updatePassword" name="updatePassword" class="btn btn-primary btn-lg" disabled="disabled">Submit</button>
                     </form>
+                    <?php if(isset($returnMsg2)){echo $returnMsg2;} ?>
                 </div>
             </div> <!-- .../col-md-6 -->
         </div>
