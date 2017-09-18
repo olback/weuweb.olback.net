@@ -17,11 +17,11 @@
 
             case "main":
                 echo '
-                <link rel="stylesheet" href="css/vendor.css">
-                <link rel="stylesheet" id="theme-style" href="css/app.css">
+                <link rel="stylesheet" href="css/vendor.min.css">
+                <link rel="stylesheet" id="theme-style" href="css/app.min.css">
                 <link rel="stylesheet" href="css/additional.css">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-                <script>var themeSettings = (localStorage.getItem(\'themeSettings\')) ? JSON.parse(localStorage.getItem(\'themeSettings\')) :{}; var themeName = themeSettings.themeName || \'\'; if(themeName) { document.write(\'<link rel="stylesheet" id="theme-style" href="css/app-\' + themeName + \'.css">\'); } else { document.write(\'<link rel="stylesheet" id="theme-style" href="css/app.css">\'); }</script>';
+                <script>var themeSettings = (localStorage.getItem(\'themeSettings\')) ? JSON.parse(localStorage.getItem(\'themeSettings\')) :{}; var themeName = themeSettings.themeName || \'\'; if(themeName) { document.write(\'<link rel="stylesheet" id="theme-style" href="css/app-\' + themeName + \'.min.css">\'); } else { document.write(\'<link rel="stylesheet" id="theme-style" href="css/app.css">\'); }</script>';
                 break;
 
             case "404":
