@@ -10,11 +10,11 @@
     cursor: pointer;
 }
 
-input[readonly="readonly"]:focus {
+/*input[readonly="readonly"]:focus {
     border-color: 1px solid rgba(0, 0, 0, 0.15) !important;
-}
+}*/
 
-input:focus.form-control {
+input[type="text"]:focus {
     border-color: 1px solid rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -22,10 +22,6 @@ input:focus.form-control {
     transition: none !important;
 }
 
-.input-group>.form-control {
-    border-radius: 0px !important;
-}
-
-.input-group>.form-control input:focus {
+.input-group>.form-control,.input-group>.form-control input:focus {
     border-radius: 0px !important;
 }
